@@ -67,7 +67,7 @@ button:hover{
 }
 
 .rotate {
-  animation: rotation 2s;
+  animation: rotation 6s;
 }
 
 .linear {
