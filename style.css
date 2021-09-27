@@ -3,29 +3,36 @@
 body{
    
     background: 
-    linear-gradient(to right, #2ab8e4 0%, #906fec 100%);
+    linear-gradient(to right, #eb753f 0%, #6fa5ec 100%);
+    text-align: center;
 }
 
 .container{
-   
-    text-align: center;    
+    
+    padding-top: 0.5%;
 }
+/*e42a9d*/
 
 .dice-section{
     
     margin: 0px 50px;
-    text-align: center;
-    display: inline-block;
+    display: inline-block; 
 }
 
+
 p{
-    font-size: medium;
+    font-size: xx-large;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     color: #000;
 }
 
 img{
+
     width: 200px;
     height: 200px;
 }
+h5,h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
