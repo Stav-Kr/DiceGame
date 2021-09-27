@@ -65,3 +65,24 @@ button {
 button:hover{
     color: rgb(142, 52, 245);
 }
+
+.rotate {
+  animation: rotation 6s;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.linear {
+  animation-timing-function: linear;
+}
+
+.infinite {
+  animation-iteration-count: infinite;
+}
