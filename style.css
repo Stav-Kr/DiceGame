@@ -67,7 +67,15 @@ button:hover{
 }
 
 .rotate {
-  animation: rotation 6s;
+  animation: rotation 2s;
+}
+
+.linear {
+  animation-timing-function: linear;
+}
+
+.infinite {
+  animation-iteration-count: infinite;
 }
 
 @keyframes rotation {
@@ -77,12 +85,4 @@ button:hover{
   to {
     transform: rotate(359deg);
   }
-}
-
-.linear {
-  animation-timing-function: linear;
-}
-
-.infinite {
-  animation-iteration-count: infinite;
 }
