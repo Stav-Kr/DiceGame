@@ -2,6 +2,7 @@
 const rollBtn = document.querySelector('.btnClick');
 rollBtn.addEventListener('click', DiceRoll);
 
+let score = 0;
 
 function DiceRoll(roll1, roll2) {
 
@@ -22,29 +23,15 @@ function DiceRoll(roll1, roll2) {
 
     } else {
         document.querySelector("h3").innerHTML = (" You win!");
-
-        document.querySelector("h4").innerHTML = score;
-    }
-
-    function scoreAdd(roll1, roll2) {
-        let score = 0;
-        if (roll1 > roll2) {
-            score++;
-            document.querySelector("h4").innerHTML = score;
-        } else if (roll1 < roll2) {
-            score--;
-            document.querySelector("h4").innerHTML = score;
-        } else {
-            score = score;
-            document.querySelector("h4").innerHTML = score;
-        }
+        score++;
+        document.querySelector("h4").innerHTML = "points: " + score;
 
 
 
     }
 
 
-    
+
 
 
 }
