@@ -3,6 +3,7 @@ const rollBtn = document.querySelector('.btnClick');
 rollBtn.addEventListener('click', DiceRoll);
 
 let score = 0;
+let scoreM = 0;
 
 function DiceRoll(roll1, roll2) {
 
@@ -20,18 +21,14 @@ function DiceRoll(roll1, roll2) {
 
     } else if (roll1 < roll2) {
         document.querySelector("h3").innerHTML = (" Morgan wins!");
+        scoreM+=1;
 
     } else {
         document.querySelector("h3").innerHTML = (" You win!");
         score++;
-        document.querySelector("h4").innerHTML = "points: " + score;
-
-
+    
 
     }
-
-
-
-
+    document.querySelector("h4").innerHTML = ` Your points: ${score} Morgan's points: ${scoreM}`;
 
 }
